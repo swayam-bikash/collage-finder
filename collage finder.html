@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Planning App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            color: white;
+            padding: 0.5em;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            padding: 0.5em;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+        main {
+            padding: 1em;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        section {
+            margin-bottom: 2em;
+            padding: 1em;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+        }
+        .review {
+            margin-bottom: 1em;
+        }
+        .review img {
+            display: block;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>College Planning App</h1>
+        <p>Helping students find the best colleges in their city</p>
+    </header>
+    <nav>
+        <a href="#overview">Overview</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#feedback">Feedback</a>
+        <a href="#rewards">Rewards</a>
+        <a href="#live-interaction">Live Interaction</a>
+        <a href="#offers">Offers</a>
+    </nav>
+    <main>
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>The college planning app is designed to assist students in selecting colleges within a city that align with their field of interest. This platform provides space for students to share their experiences and feedback, helping new students make informed decisions.</p>
+        </section>
+        <section id="reviews">
+            <h2>Reviews</h2>
+            <div class="review">
+                <h3>John Doe, Computer Science</h3>
+                <p>"Great faculty and well-equipped labs. The campus is beautiful and the community is very welcoming."</p>
+                <p>Rating: ⭐⭐⭐</p>
+                <img src="pictures/classroom.jpg" alt="College campus" style="width:100%;max-width:300px;">
+            </div>
+            <div class="review">
+                <h3>Jane Smith, Business Administration</h3>
+                <p>"The business program is top-notch, and the professors are very knowledgeable. Plenty of internship opportunities."</p>
+                <p>Rating: ⭐⭐⭐⭐</p>
+                <img src="path/to/sample-image2.jpg" alt="Classroom" style="width:100%;max-width:300px;">
+            </div>
+        </section>
+        <section id="feedback">
+            <h2>Feedback</h2>
+            <div>
+                <h3>Teaching Quality</h3>
+                <p>"The teaching quality is excellent, with experienced professors who are always willing to help."</p>
+            </div>
+            <div>
+                <h3>Faculty Behavior</h3>
+                <p>"The faculty members are very approachable and supportive. They genuinely care about students' success."</p>
+            </div>
+            <div>
+                <h3>Hostel and Mess Facilities</h3>
+                <p>"The hostels are clean and well-maintained. The mess food is decent and hygienic."</p>
+            </div>
+        </section>
+        <section id="rewards">
+            <h2>Rewards</h2>
+            <p>Earn points by writing feedback or adding content. Points can be redeemed for cash prizes. Here's a look at the current top contributors:</p>
+            <ul>
+                <li>Alice Johnson - 1500 points</li>
+                <li>Bob Brown - 1200 points</li>
+                <li>Charlie Davis - 1000 points</li>
+            </ul>
+        </section>
+        <section id="live-interaction">
+            <h2>Live Interaction</h2>
+            <p>Join live sessions with current students to ask questions and get real-time answers. Upcoming sessions:</p>
+            <ul>
+                <li>June 15, 2024 - 3:00 PM: Chat with Engineering Students</li>
+                <li>June 20, 2024 - 5:00 PM: Business Administration Q&A</li>
+            </ul>
+        </section>
+        <section id="offers">
+            <h2>Offers</h2>
+            <p>Check out the latest scholarships, discounts, and other offers available at different colleges:</p>
+            <ul>
+                <li>XYZ College - 50% scholarship for top 10 students in entrance exam</li>
+                <li>ABC Institute - Early bird discount for admissions before July 31</li>
+                <li>PQR University - 25% discount on hostel fees for the first year</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 College Planning App. All rights reserved.</p>
+    </footer>
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+        });
+    </script>
+</body>
+</html>
